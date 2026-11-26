@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Showcase 2026</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Student Showcase 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="elements.html">Element Checker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="club.html">Club Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="creator.html">Meet the Creator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">Welcome to My Showcase!</h1>
+            <p class="text-muted">All my ICT 10 webpages from the second quarter, made with Python and PyScript.</p>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-center mb-1">Nickname Atlas</h3>
+                        <p class="text-center text-muted mb-4">Seatwork 1</p>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">First Name</label>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+                        <button class="btn btn-pink w-100" py-click="find_nickname">Find Nickname</button>
+
+                        <div id="result" class="alert result mt-4 mb-0">Result will appear here.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5>Element Checker</h5>
+                        <p class="text-muted">Skills Test</p>
+                        <a href="elements.html" class="btn btn-pink">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5>School Club Members</h5>
+                        <p class="text-muted">Drill 2</p>
+                        <a href="club.html" class="btn btn-pink">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5>Meet the Creator</h5>
+                        <p class="text-muted">Project</p>
+                        <a href="creator.html" class="btn btn-pink">Open</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-3">&copy; 2026 Sasha Valenci &middot; ICT 10 &middot; 2nd Quarter</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="nickname.py"></script>
+</body>
+</html>
